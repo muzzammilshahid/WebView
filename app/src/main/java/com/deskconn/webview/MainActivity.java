@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        b1=(Button)findViewById(R.id.button);
-        ed1=(EditText)findViewById(R.id.editText);
+        b1= findViewById(R.id.button);
+        ed1= findViewById(R.id.editText);
 
-        wv1=(WebView)findViewById(R.id.webView);
+        wv1= findViewById(R.id.webView);
         wv1.setWebViewClient(new MyBrowser());
 
         b1.setOnClickListener(v -> {
